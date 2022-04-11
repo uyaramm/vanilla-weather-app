@@ -84,3 +84,9 @@ body {
 #fahrenheit-unit {
   text-decoration: none;
 }
+
+footer {
+  display: block;
+  text-align: center;
+  line-height: 0;
+}
