@@ -1,0 +1,86 @@
+h1 {
+  padding-top: 30px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  border: 2px solid transparent;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.main {
+  display: block;
+  color: 8;
+  border: 3px solid #eeeeee;
+  box-shadow: 5px 5px 15px #5c5470;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #dbd8e3;
+}
+
+.time-date {
+  font-size: 25px;
+  text-align: right;
+  padding-top: 8%;
+  position: relative;
+  top: 25px;
+}
+
+.temperatureStyle {
+  font-size: 25px;
+  text-align: left;
+  padding-top: 8%;
+}
+
+.more-info {
+  font-size: 20px;
+  display: list-item;
+  text-align: right;
+  list-style: none;
+  position: relative;
+  bottom: 40px;
+}
+
+.city {
+  font-size: 30px;
+  text-align: left;
+  position: relative;
+  top: 60px;
+}
+
+.follow-days {
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #2a2438;
+  font-size: 20px;
+  position: relative;
+  bottom: 0%;
+  text-align: center;
+}
+
+.city-box {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.button {
+  background: #8aacff;
+  color: #2a2438;
+  border: 1px solid #6e5773;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#celsius-unit,
+#fahrenheit-unit {
+  text-decoration: none;
+}
