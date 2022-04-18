@@ -16,128 +16,113 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="city-box" id="city-form">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Search for a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
           <div class="row">
             <div class="col-6">
-              <input
-                type="search"
-                placeholder="Search for a city..."
-                autofocus="on"
-                autocomplete="off"
-                id="search-city"
-              />
+              <div class="clearfix weather-temperature">
+                <img src="#" alt="" class="float-left" id="icon" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a>|<a
+                      href="#"
+                      id="fahrenheit-link"
+                      >°F</a
+                    ></span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-2">
-              <input
-                id="search-button"
-                type="submit"
-                value="Search"
-                class="button"
-              />
-            </div>
-            <div class="col-2">
-              <input
-                id="current-button"
-                type="submit"
-                value="My Location"
-                class="button"
-              />
+            <div class="col-6">
+              <ul>
+                <li>
+                  H:<span id="maxTemp"></span>°C L:<span id="minTemp"></span>°C
+                </li>
+                <li>Wind:<span id="wind"></span> km/h</li>
+                <li>Feels like:<span id="feelsLike"></span>°C</li>
+              </ul>
             </div>
           </div>
-        </form>
-      </div>
-      <div class="main">
-        <div class="row">
-          <div class="col-sm-6 temperatureStyle">
-            <strong>
-              🌫️ <span id="temperature"></span>
-              <span id="units">
-                <a href="#" id="celsius-unit">°C</a> |
-                <a href="#" id="fahrenheit-unit">F</a>
-              </span></strong
-            >
-            <br />
-            High:<span id="temp_max"></span>°C
-            <br />
-            Low:<span id="temp_min"></span>
-          </div>
+          <div class="row follow-days">
+            <div class="col-2 order-first">
+              ❄️ <br />
+              THU
+              <br />
+              -4/-7C
+            </div>
 
-          <div class="col-sm-6 time-date">
-            <span id="time">10:00</span>
-            <br />
-            <span id="date">WED - March,02</span>
+            <div class="col-2 order-second">
+              ⛅ <br />
+              FRI
+              <br />
+              -4/-11C
+            </div>
+
+            <div class="col-2 order-third">
+              ☁️ <br />
+              SAT
+              <br />
+              0/-13C
+            </div>
+
+            <div class="col-2 order-fourth">
+              ❄️ <br />
+              SUN
+              <br />
+              -3/-9C
+            </div>
+
+            <div class="col-2 order-fifth">
+              ⛅ <br />
+              MON
+              <br />
+              6/-5C
+            </div>
+
+            <div class="col-2 order-last">
+              ☁️ <br />
+              TUE
+              <br />
+              -2/-7C
+            </div>
           </div>
         </div>
-
-        <div class="row ml-2">
-          <div class="col-12 city">
-            <h1><strong id="city"></strong></h1>
-            <small id="description"></small>
-          </div>
-        </div>
-        <div class="col-12">
-          <ul class="more-info">
-            <li>Wind: <span id="wind"></span>km/h</li>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Feels Like: <span id="feelsLike"></span>°C</li>
-          </ul>
-        </div>
-
-        <div class="row follow-days">
-          <div class="col-2 order-first">
-            ❄️ <br />
-            THU
-            <br />
-            -4/-7C
-          </div>
-
-          <div class="col-2 order-second">
-            ⛅ <br />
-            FRI
-            <br />
-            -4/-11C
-          </div>
-
-          <div class="col-2 order-third">
-            ☁️ <br />
-            SAT
-            <br />
-            0/-13C
-          </div>
-
-          <div class="col-2 order-fourth">
-            ❄️ <br />
-            SUN
-            <br />
-            -3/-9C
-          </div>
-
-          <div class="col-2 order-fifth">
-            ⛅ <br />
-            MON
-            <br />
-            6/-5C
-          </div>
-
-          <div class="col-2 order-last">
-            ☁️ <br />
-            TUE
-            <br />
-            -2/-7C
-          </div>
-        </div>
+        <small>
+          <a href="https://github.com/uyaramm/weather-app" target="_blank"
+            >Open-source code</a
+          >
+          by Uyara M Montovaneli
+        </small>
       </div>
     </div>
-    <footer>
-      <a
-        href="https://github.com/uyaramm/weather-app"
-        target="_blank"
-        id="footer"
-        >Open-source code</a
-      >
-      by Uyara Montovaneli
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>

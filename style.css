@@ -1,92 +1,72 @@
-h1 {
-  padding-top: 30px;
-}
-
 body {
   font-family: "Courier New", Courier, monospace;
-  line-height: 1.5;
-  border: 2px solid transparent;
-  margin: 20px auto;
-  max-width: 800px;
-  border-radius: 5px;
 }
 
-.main {
-  display: block;
-  color: 8;
-  border: 3px solid #eeeeee;
-  box-shadow: 5px 5px 15px #5c5470;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #dbd8e3;
+h1 {
+  color: #2a2438;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0%;
 }
 
-.time-date {
-  font-size: 25px;
-  text-align: right;
-  padding-top: 8%;
-  position: relative;
-  top: 25px;
+ul {
+  margin: 0;
+  padding: 0;
 }
-
-.temperatureStyle {
-  font-size: 25px;
-  text-align: left;
-  padding-top: 8%;
-}
-
-.more-info {
-  font-size: 20px;
-  display: list-item;
-  text-align: right;
+li {
   list-style: none;
-  position: relative;
-  bottom: 40px;
+  color: #5c5470;
+  font-weight: 100;
+  line-height: 20px;
 }
 
-.city {
-  font-size: 30px;
-  text-align: left;
-  position: relative;
-  top: 60px;
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
 }
 
-.follow-days {
-  border: 2px solid #eeeeee;
+.weather-app {
+  padding: 20px;
+  display: block;
+  border: 3px solid #dadde1;
+  box-shadow: 5px 5px 15px #5c5470;
   border-radius: 5px;
-  background-color: transparent;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
   color: #2a2438;
-  font-size: 20px;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.weather-temperature .units {
   position: relative;
-  bottom: 0%;
-  text-align: center;
-}
-
-.city-box {
-  font-size: 20px;
-  margin-top: 30px;
-  text-align: center;
-}
-
-.button {
-  background: #8aacff;
-  color: #2a2438;
-  border: 1px solid #6e5773;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-}
-
-#celsius-unit,
-#fahrenheit-unit {
+  top: -32px;
+  font-size: 16px;
   text-decoration: none;
 }
 
-footer {
-  display: block;
-  text-align: center;
-  line-height: 0;
+.weather-temperature .active {
+  color: #5c5470;
+  cursor: default;
+}
+
+.weather-temperature .active :hover {
+  text-decoration: none;
+}
+
+.follow-days {
+  margin-top: 20px;
 }
