@@ -21,6 +21,12 @@ function search(city) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
+function getForecast(coordinates) {
+  let apiKey = "f334bb9d485705f6febc3f97f9a7e57c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 
@@ -56,6 +62,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 let searchForm = document.querySelector("#search-form");
@@ -91,7 +99,8 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["THU", "FRI", "SAT", "SUN", "MON", "TUE"];
@@ -119,4 +128,3 @@ function displayForecast() {
 }
 
 search("Ottawa");
-displayForecast();
