@@ -61,12 +61,26 @@ li {
 .weather-temperature .active {
   color: #5c5470;
   cursor: default;
+  text-decoration: none;
 }
 
 .weather-temperature .active :hover {
   text-decoration: none;
 }
 
-.follow-days {
+.weather-forecast {
+  text-align: center;
   margin-top: 20px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
