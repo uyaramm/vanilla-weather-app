@@ -1,5 +1,6 @@
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: #f9f7fd;
 }
 
 h1 {
@@ -19,11 +20,26 @@ li {
   color: #5c5470;
   font-weight: 100;
   line-height: 20px;
+  text-transform: capitalize;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+small {
+  color: #5c5470;
+}
+
+.button {
+  background-color: #5c5470;
+  border: transparent;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  background-color: white;
 }
 
 .weather-app {
@@ -55,16 +71,6 @@ li {
   position: relative;
   top: -32px;
   font-size: 16px;
-  text-decoration: none;
-}
-
-.weather-temperature .active {
-  color: #5c5470;
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active :hover {
   text-decoration: none;
 }
 
