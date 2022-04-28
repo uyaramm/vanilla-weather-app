@@ -31,6 +31,10 @@ small {
   color: #5c5470;
 }
 
+.float-left {
+  float: left;
+}
+
 .button {
   background-color: #5c5470;
   border: transparent;
